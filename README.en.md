@@ -127,6 +127,19 @@ After editing, quit Claude Desktop completely (tray icon → Quit) and start it 
 | `PPLX_PRICES` | catalogue prices as of 2026-11-03 | JSON with prices for estimates, ₽ per 1M tokens |
 | `PPLX_LOG_FILE` / `PPLX_SPEND_FILE` | next to `index.js` | Log and spend ledger |
 
+## Docker
+
+The `Dockerfile` in the root builds the server into a container. The key is not baked
+into the image — it is passed at run time.
+
+```bash
+docker build -t proxyapi-perplexity-mcp .
+docker run --rm -i   -e PROXYAPI_KEY=sk-...   -e PPLX_DAILY_BUDGET=200   proxyapi-perplexity-mcp
+```
+
+[Glama](https://glama.ai/mcp/servers/spolperim-lab/ProxyAPI-Perplexity-mcp) uses the same
+file to run its automated safety and quality checks.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).

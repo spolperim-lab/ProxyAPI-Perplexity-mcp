@@ -110,6 +110,19 @@ claude mcp add perplexity --scope user -e PROXYAPI_KEY_FILE=C:/path/to/key.env -
 | `PPLX_PRICES` | цены каталога на 03.11.2026 | JSON с ценами для оценки, ₽ за 1М токенов |
 | `PPLX_LOG_FILE` / `PPLX_SPEND_FILE` | рядом с `index.js` | Лог и учёт расходов |
 
+## Docker
+
+`Dockerfile` в корне собирает сервер в контейнер. Ключ в образ не зашивается —
+он передаётся при запуске.
+
+```bash
+docker build -t proxyapi-perplexity-mcp .
+docker run --rm -i   -e PROXYAPI_KEY=sk-...   -e PPLX_DAILY_BUDGET=200   proxyapi-perplexity-mcp
+```
+
+Этим же файлом [Glama](https://glama.ai/mcp/servers/spolperim-lab/ProxyAPI-Perplexity-mcp)
+прогоняет автоматические проверки безопасности и качества.
+
 ## Лицензия
 
 MIT — см. [LICENSE](LICENSE).
