@@ -1,0 +1,16 @@
+{
+  "name": "perplexity-proxyapi-mcp",
+  "version": "1.0.0",
+  "description": "MCP-сервер: поиск и Deep Research через Perplexity (Sonar) по API ProxyAPI с оплатой в рублях",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "perplexity-proxyapi-mcp": "index.js"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}

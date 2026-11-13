@@ -1,0 +1,12 @@
+# Секреты — никогда не коммитить
+key.env
+*.env
+!key.env.example
+
+# Зависимости
+node_modules/
+
+# Логи, учёт расходов и резервные копии
+*.log
+spend.json
+*.bak
