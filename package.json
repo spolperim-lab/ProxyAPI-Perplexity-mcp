@@ -8,9 +8,31 @@
     "perplexity-proxyapi-mcp": "index.js"
   },
   "license": "MIT",
-  "private": true,
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",
     "zod": "^4.6.7"
-  }
+  },
+  "mcpName": "io.github.spolperim-lab/perplexity-proxyapi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spolperim-lab/ProxyAPI-Perplexity-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spolperim-lab/ProxyAPI-Perplexity-mcp/issues"
+  },
+  "homepage": "https://github.com/spolperim-lab/ProxyAPI-Perplexity-mcp#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "claude-code",
+    "perplexity",
+    "sonar",
+    "proxyapi",
+    "search",
+    "deep-research"
+  ]
 }

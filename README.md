@@ -1,3 +1,5 @@
+*Русский · [English](README.en.md)*
+
 # perplexity-proxyapi-mcp
 
 MCP-сервер для Claude (Claude Code и Claude Desktop): поиск в интернете и Deep Research через **Perplexity** (модели Sonar) по API **[ProxyAPI](https://proxyapi.ru)** — оплата в рублях российской картой или СБП, без VPN.
@@ -37,8 +39,8 @@ MCP-сервер для Claude (Claude Code и Claude Desktop): поиск в и
 Нужен [Node.js](https://nodejs.org/) 20+.
 
 ```bash
-git clone git@github.com:spolperim-lab/stringutils-practice.git
-cd stringutils-practice/ProxyAPI-Perplexity-mcp
+git clone https://github.com/spolperim-lab/ProxyAPI-Perplexity-mcp.git
+cd ProxyAPI-Perplexity-mcp
 npm install
 ```
 
@@ -52,7 +54,7 @@ npm install
    - **Бюджет** — по желанию, ещё один предохранитель.
 4. Скопируйте `key.env.example` в `key.env` и вставьте ключ в строку `ProxyAPI_Key`.
 
-Один `key.env` можно делить с другими MCP (например, с [gigachat-image-mcp](../gigachat-image-mcp)): каждый сервер читает только свою строку.
+Один `key.env` можно делить с другими MCP (например, с [gigachat-image-mcp](https://github.com/spolperim-lab/gigachat-image-mcp)): каждый сервер читает только свою строку.
 
 > ⚠️ `key.env` — секрет. Не выкладывайте его и не пересылайте. Он уже в `.gitignore`.
 
@@ -110,4 +112,4 @@ claude mcp add perplexity --scope user -e PROXYAPI_KEY_FILE=C:/path/to/key.env -
 
 ## Лицензия
 
-MIT
+MIT — см. [LICENSE](LICENSE).
